@@ -1,5 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,400;0,900;1,400&display=swap');
+
 body {
     display: flex;
+    flex-direction: column;
     background-color: black;
     color: white;
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'DM Serif Display', 'Times New Roman', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul a {
+    margin: 1vw;
+}
+
+#logo {
+    width: 3rem
+}
+
+
+
+/* Temporarily removed images */
+#hero img {
+    display: none;
 }
