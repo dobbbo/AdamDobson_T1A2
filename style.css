@@ -11,7 +11,7 @@ body {
 a {
     text-decoration: none;
     color: white;
-    font-family: 'Libre Baskerville', 'Times New Roman', serif;
+    font-family: 'Libre Baskerville';
     font-style: italic;
     font-size: 1rem;
 }
@@ -36,25 +36,42 @@ ul a {
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background: url(images/self-portrait.png) black no-repeat left;
-    background-size: 73vw;
+    background: url(images/self-portrait.png) black no-repeat top left;
+    background-size: 75vw;
     height: 100vw;
     width: 100%;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
 }
 
 #hero h3 {
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'League Spartan';
     font-size: 1rem;
     margin: 0;
 }
 
 #hero h1 {
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'League Spartan';
     font-size: 2rem;
     margin: 1rem 0 1rem 0;
 }
 
 #hero img {
     width: 50vw;
+}
+
+#contacts-and-socials {
+    font-family: 'Libre Baskerville';
+    font-size: 0.75rem;
+}
+
+#contacts-and-socials ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+footer {
+    font-family: 'Libre Baskerville';
+    font-size: 0.75rem;
+    text-align: center;
 }
