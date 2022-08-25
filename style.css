@@ -27,7 +27,7 @@ a:hover {
 header {
     display: flex;
     align-items: center;
-    margin: 0 0 5vw 0;
+    margin: 0 0 2.5vh 0;
 }
 
 label {
@@ -81,8 +81,7 @@ label {
 
 
 .trigger:checked ~ nav {
-    margin: 1vw 0 0 0;
-    top: 5rem;
+    top: 4.5rem;
     right: 1rem;
 }
 
@@ -93,7 +92,7 @@ label {
 nav {
     position: absolute;
     display: flex;
-    top: 5rem;
+    top: 4.5rem;
     right: 35rem;
     padding: 0;
     transition: all ease-in-out 0.3s;
@@ -104,6 +103,7 @@ nav a {
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0);
     transition: all ease-in-out 0.3s;
+    margin: 0 1vh 0 0;
 }
 
 #hero {
@@ -113,7 +113,7 @@ nav a {
     flex-direction: column;
     background: url(images/self-portrait.png) black no-repeat top center;
     background-size: contain;
-    height: 50vh;
+    height: 55vh;
     width: 100%;
     margin: 0 0 7.5vh 0;
 }
@@ -182,6 +182,12 @@ footer p {
         display: none;
     }
 
+    .trigger:checked {
+        margin: 1vw 0 0 0;
+        top: auto;
+        right: 2rem;
+    }
+
     nav {
         margin: 1vw 0 0 0;
         top: auto;
@@ -195,8 +201,8 @@ footer p {
 
     #hero {
         justify-content: center;
-        height: 60vh;
-        margin: 0;
+        height: 65vh;
+        margin: 0 0 2vh 0;
     }
 
     #hero h1 {
@@ -246,6 +252,12 @@ footer p {
         display: none;
     }
 
+    .trigger:checked {
+        margin: 1vw 0 0 0;
+        top: auto;
+        right: 2rem;
+    }
+
     nav {
         margin: 1vw 0 0 0;
         top: auto;
@@ -264,8 +276,8 @@ footer p {
     #hero {
         justify-content: center;
         align-items: flex-start;
-        height: 60vh;
-        margin: 0;
+        height: 65vh;
+        margin: 0 0 2vh 0;
     }
 
     #hero > * {
