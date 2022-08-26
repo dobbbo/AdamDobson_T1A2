@@ -17,11 +17,6 @@ a {
     font-family: 'Libre Baskerville';
     font-style: italic;
     font-size: 1rem;
-
-}
-
-a:hover {
-    background-color: blue;
 }
 
 header {
@@ -93,7 +88,7 @@ nav {
     position: absolute;
     display: flex;
     top: 4.5rem;
-    right: 35rem;
+    right: 40rem;
     padding: 0;
     transition: all ease-in-out 0.3s;
     margin: 1vw 0 0 0;
@@ -131,7 +126,7 @@ nav a {
 }
 
 #hero h1 span {
-    color: greenyellow;
+    color: #3fc7e2;
 }
 
 #socials {
