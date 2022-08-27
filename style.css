@@ -142,7 +142,7 @@ nav a {
 
 #hero h1 span {
     color: aqua;
-    font-size: 2.5rem;
+    font-size: 1.25em;
 }
 
 #socials {
@@ -279,12 +279,6 @@ footer p {
 
     .hamburger {
         display: none;
-    }
-
-    .trigger:checked {
-        margin: 1vw 0 0 0;
-        top: auto;
-        right: 2rem;
     }
 
     nav {
