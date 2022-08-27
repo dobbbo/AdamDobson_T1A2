@@ -112,17 +112,21 @@ h1 {
     text-align: center;
 }
 
-main h2 {
+section h2 {
     font-family: 'League Spartan';
     margin: 0.5rem 0;
+    font-style: normal;
+    font-size: 2rem;
 }
 
-main p {
+section p {
     font-family: 'Libre Baskerville';
     margin: 0.5rem 0;
+    font-style: normal;
+    font-size: 1rem;
 }
 
-main section {
+main a {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -135,22 +139,22 @@ main section {
     padding: 0.75rem;
 }
 
-#project-1 {
+main a:nth-child(1){
     background-image: url(images/placeholder-1.jpg);
     background-size: cover;
 }
 
-#project-2 {
+main a:nth-child(2) {
     background-image: url(images/placeholder-2.jpg);
     background-size: cover;
 }
 
-#project-3 {
+main a:nth-child(3) {
     background-image: url(images/placeholder-3.jpg);
     background-size: cover;
 }
 
-#project-4 {
+main a:nth-child(4) {
     background-image: url(images/placeholder-4.jpg);
     background-size: cover;
 }
@@ -313,8 +317,7 @@ footer p {
         justify-content: center;
     }
 
-    main section {
+    main a {
         width: 40%;
     }
-
 }
