@@ -170,27 +170,27 @@ main a:hover {
 
 /* Added a background image to each section. */
 main a:nth-child(1){
-    background-image: url(../../docs/images/afl.jpg);
+    background-image: url(../docs/images/afl.jpg);
     background-size: cover;
 }
 
 main a:nth-child(2) {
-    background-image: url(../../docs/images/watch.jpg);
+    background-image: url(../docs/images/watch.jpg);
     background-size: cover;
 }
 
 main a:nth-child(3) {
-    background-image: url(../../docs/images/trading.jpg);
+    background-image: url(../docs/images/trading.jpg);
     background-size: cover;
 }
 
 main a:nth-child(4) {
-    background-image: url(../../docs/images/coding.jpg);
+    background-image: url(../docs/images/coding.jpg);
     background-size: cover;
 }
 
 main a:nth-child(5) {
-    background-image: url(../../docs/images/productivity.jpg);
+    background-image: url(../docs/images/productivity.jpg);
     background-size: cover;
 }
 
