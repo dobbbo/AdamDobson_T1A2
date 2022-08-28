@@ -46,5 +46,6 @@ The target audience for this website is for any prospective employers. The goal 
 
 - This website was created entirely using only HTML and CSS
 - Used GIMP to edit some of the photos
-- Wireframes and sitemap were created using Figma
+- Sitemap was created using Figma
+- Wireframes created with Moqups
 - Website was deployed via Netlify
