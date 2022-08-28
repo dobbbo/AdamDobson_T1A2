@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Libre+Baskerville:ital@0;1&display=swap');
 
+/* Utilised flexbox on the entire body of page to orientate and align all content. Also applied height, width, padding and background color. */
 body {
     display: flex;
     flex-direction: column;
@@ -7,9 +8,18 @@ body {
     color: rgb(255, 255, 255);
     padding: 2vh;
     margin: 0;
+    height: 100vh;
     max-width: 100vw;
 }
 
+/* Utilised flexbox to align and space out the header content. Applied a margin to the bottom of header too. */
+header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 2.5vh 0;
+}
+
+/* Removed default text decoration of links, changed color, font, font-style and font size. Used a transition to highlight hovered links in a more decorative manner. */
 a {
     text-decoration: none;
     color: white;
@@ -18,58 +28,44 @@ a {
     font-size: 1rem;
 }
 
+/* Hovered links will have slightly larger text, and will be highlighted in aqua. */
 a:hover {
     font-size: 1.1rem;
     color: aqua;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    margin: 0 0 2.5vh 0;
+/* Logo in top-left of header will link to the home page, so also applied a transition for when hovered. */
+#logo {
+    width: 3rem;
+    transition: all 0.3s ease-in-out;
 }
 
+/* Similar to other links, logo will be larger and colored in aqua when hovered. */
+#logo:hover {
+    width: 3.25rem;
+    background-color: aqua;
+}
+
+/* Label wrapping the entire 'Hamburger Menu' (on smaller screens), used flexbox to keep it in the top-right corner. */
 label {
     display: flex;
     align-items: center;
     margin-left: auto;
 }
 
-#logo {
-    width: 3rem;
-    transition: all 0.3s ease-in-out;
-}
-
-#logo:hover {
-    width: 3.25rem;
-    background-color: aqua;
-}
-
+/* Menu text next to the hamburger icon. Changed font and applied cursor pointer to highlight it is clickable. */
 .menu {
     font-family: 'Libre Baskerville';
     font-size: 1rem;
     cursor: pointer;
 }
 
-.hamburger {
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    height: 3px;
-    width: 30px;
-    background: white;
-    display: block;
-    margin: 5px;
-    position: relative;
-    transition: all 0.1s ease-in-out;
-}
-
+/* Made the checkbox invisible. */
 .trigger {
     display: none;
 }
 
+/* Used transform to turn the hamburger icon into a cross when clicked on. */
 .trigger:checked ~ .hamburger span:first-child {
     transform: rotate(45deg);
     top: 8px;
@@ -84,20 +80,40 @@ label {
     opacity: 0;
 }
 
-
+/* When hamburger menu is clicked, the nav bar will slide in from the left to here. */
 .trigger:checked ~ nav {
     top: 4.5rem;
     right: 1rem;
 }
 
+/* When hamburger menu is clicked, the nav bar items will transition from transparent to opaque white. */
 .trigger:checked ~ nav a {
     color: rgb(255, 255, 255);
 }
 
+/* Similar to the other links, the nav bar links will be highlighted in aqua when hovered. */
 .trigger:checked ~ nav a:hover {
     color: aqua;
 }
 
+/* Slight spacing in between hamburger icon and menu text. Added cursor pointer too. */
+.hamburger {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Hamburger icon decorated and positioned as per below. Added a transition to make the 'hamburger to cross' animation smoother. */
+.hamburger span {
+    height: 3px;
+    width: 30px;
+    background: white;
+    display: block;
+    margin: 5px;
+    position: relative;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Nav bar hidden off page when menu is not clicked. */
 nav {
     position: absolute;
     display: flex;
@@ -108,6 +124,7 @@ nav {
     margin: 1vw 0 0 0;
 }
 
+/* Nav bar items made fully transparent when menu is not clicked. */
 nav a {
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0);
@@ -115,6 +132,13 @@ nav a {
     margin: 0 1vh 0 0;
 }
 
+/* Title decorated as such. */
+h1 {
+    font-family: 'League Spartan';
+    text-align: center;
+}
+
+/* Aligned all sections to be centered. */
 main {
     display: flex;
     flex-direction: column;
@@ -122,29 +146,7 @@ main {
     margin: 0 0 2rem 0;
 }
 
-h1 {
-    font-family: 'League Spartan';
-    text-align: center;
-}
-
-section h2 {
-    font-family: 'League Spartan';
-    margin: 0.5rem 0;
-    font-style: normal;
-    font-size: 2rem;
-}
-
-section p {
-    font-family: 'Libre Baskerville';
-    margin: 0.5rem 0;
-    font-style: normal;
-    font-size: 1rem;
-}
-
-section p:last-child {
-    font-style: italic;
-}
-
+/* Each section is wrapped in an anchor tag to make them clickable and linkable to a new page/blog. Added a transition to assist with highlighting hovered sections. */
 main a {
     box-sizing: border-box;
     display: flex;
@@ -159,12 +161,14 @@ main a {
     transition: all 0.2s ease-in-out;
 }
 
+/* When each section is hovered, it will be highlighted as per below. */
 main a:hover {
     border: 3px solid aqua;
     width: 91vw;
     height: 16rem;
 }
 
+/* Added a background image to each section. */
 main a:nth-child(1){
     background-image: url(../images/afl.jpg);
     background-size: cover;
@@ -190,10 +194,33 @@ main a:nth-child(5) {
     background-size: cover;
 }
 
+/* Decorated the titles of each blog as such. */
+section h2 {
+    font-family: 'League Spartan';
+    margin: 0.5rem 0;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+/* Decorated the description of each section as such. */
+section p {
+    font-family: 'Libre Baskerville';
+    margin: 0.5rem 0;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* Made the 'Read More' section of each blog italic, to make it more obviously clickable. */
+section p:last-child {
+    font-style: italic;
+}
+
+/* Positioned the 'socials' section to push it to the bottom of page. */
 #socials {
     margin: 0 0 5vh 0;
 }
 
+/* Evenly spaced socials icons. */
 #socials ul {
     display: flex;
     justify-content: space-around;
@@ -201,10 +228,12 @@ main a:nth-child(5) {
     margin: 0;
 }
 
+/* Added slight margin on left and right of each icon. */
 #socials ul a {
     margin: 0 1rem 0 1rem;
 }
 
+/* Footer with smaller text containing my contact details and copyright at bottom of page. */
 footer {
     display: flex;
     flex-direction: column;
@@ -215,40 +244,19 @@ footer {
     margin: 0;
 }
 
+/* Added slight margin around each line of footer. */
 footer p {
     margin: 0.2rem;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 949px) {
+    
+    /* Increased body padding for medium sized screens. */
     body {
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        color: white;
         padding: 5vh;
-        margin: 0;
-        max-height: 100vh;
     }
 
-    .menu {
-        display: none;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    nav {
-        margin: 1vw 0 0 0;
-        top: auto;
-        right: 2rem;
-    }
-
-    nav a {
-        color: rgb(255, 255, 255);
-        margin: 0 1rem 0 0;
-    }
-
+    /* Increaed font-size for links. */
     a {
         font-size: 1.5rem;
     }
@@ -257,6 +265,7 @@ footer p {
         font-size: 1.6rem;
     }
 
+    /* Increased size of logo. */
     #logo {
         width: 4rem;
     }
@@ -265,33 +274,7 @@ footer p {
         width: 4.25rem;
     }
 
-    #socials {
-        margin: 0;
-    }
-    
-    #socials ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    h1 {
-        margin: 0.5rem;
-    }
-}
-
-@media only screen and (min-width: 950px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        color: rgb(255, 255, 255);
-        padding: 5vh;
-        margin: 0;
-        max-height: 100vh;
-    }
-
+    /* On medium sized screens and above, I removed the hamburger menu and replaced it with a regular nav bar. */
     .menu {
         display: none;
     }
@@ -300,6 +283,7 @@ footer p {
         display: none;
     }
 
+    /* Nav bar positioned and decorated as such. */
     nav {
         margin: 1vw 0 0 0;
         top: auto;
@@ -311,10 +295,33 @@ footer p {
         margin: 0 1rem 0 0;
     }
 
-    header {
-        justify-content: space-around;
+    /* Slightly modified the margin to make the page look nicer. */
+    h1 {
+        margin: 0.5rem;
     }
 
+    /* Removed margin of socials section. */
+    #socials {
+        margin: 0;
+    }
+    
+    /* Re-aligned the socials icons to the center on medium device screens, rather than evenly spaced across bottom. */
+    #socials ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+
+    /* Kept the same padding as medium screens. */  
+    body {
+        padding: 5vh;
+    }
+
+    /* Increased font sizes slightly again. */
     a {
         font-size: 2rem;
     }
@@ -323,6 +330,7 @@ footer p {
         font-size: 2.1rem;
     }
 
+    /* Increased logo size slightly again. */
     #logo {
         width: 5rem;
     }
@@ -331,32 +339,59 @@ footer p {
         width: 5.25rem;
     }
 
-    #socials {
-        margin: 0;
-    }
-    
-    #socials ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
+    /* Removed hamburger menu and kept traditional nav bar as per medium screens. */
+    .menu {
+        display: none;
     }
 
+    .hamburger {
+        display: none;
+    }
+
+    /* Same as per medium screens. */
+    nav {
+        margin: 1vw 0 0 0;
+        top: auto;
+        right: 2rem;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        margin: 0 1rem 0 0;
+    }
+
+    /* Slightly increased font-size, kept same margin as per medium screens. */
     h1 {
         font-size: 2.5rem;
         margin: 0.5rem;
     }
 
+    /* Changed to flex-flow: row wrap instead of column. This changed the positioning of the sections from a column to a row for larger screens. */
     main {
         flex-flow: row wrap;
         justify-content: center;
     }
 
+    /* Each section only takes up 40% of the parent width. This allows 2 sections to sit next to each other (per row). */
     main a {
         width: 40%;
     }
 
+    /* Slight increase in size of section when hovered. Assists in highlighting hovered sections. */
     main a:hover {
         width: 41%;
+    }
+
+    /* Same as per medium screens. */
+    #socials {
+        margin: 0;
+    }
+    
+    /* Same as per medium screens. */
+    #socials ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
     }
 }
