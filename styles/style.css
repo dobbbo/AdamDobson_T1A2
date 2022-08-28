@@ -180,7 +180,7 @@ nav a {
 
 /* Added slight margin on left and right of each icon. */
 #socials ul a {
-    margin: 0 1vw 0 1vw;
+    margin: 0 1rem 0 1rem;
 }
 
 /* Footer with smaller text containing my contact details and copyright at bottom of page. */
