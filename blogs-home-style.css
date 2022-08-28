@@ -141,6 +141,10 @@ section p {
     font-size: 1rem;
 }
 
+section p:last-child {
+    font-style: italic;
+}
+
 main a {
     box-sizing: border-box;
     display: flex;
@@ -152,29 +156,37 @@ main a {
     height: 15rem;
     margin: 1rem;
     padding: 0.75rem;
+    transition: all 0.2s ease-in-out;
 }
 
 main a:hover {
     border: 3px solid aqua;
+    width: 91vw;
+    height: 16rem;
 }
 
 main a:nth-child(1){
-    background-image: url(images/placeholder-1.jpg);
+    background-image: url(images/afl.jpg);
     background-size: cover;
 }
 
 main a:nth-child(2) {
-    background-image: url(images/placeholder-2.jpg);
+    background-image: url(images/watch.jpg);
     background-size: cover;
 }
 
 main a:nth-child(3) {
-    background-image: url(images/placeholder-3.jpg);
+    background-image: url(images/trading.jpg);
     background-size: cover;
 }
 
 main a:nth-child(4) {
-    background-image: url(images/placeholder-4.jpg);
+    background-image: url(images/coding.jpg);
+    background-size: cover;
+}
+
+main a:nth-child(5) {
+    background-image: url(images/productivity.jpg);
     background-size: cover;
 }
 
@@ -342,5 +354,9 @@ footer p {
 
     main a {
         width: 40%;
+    }
+
+    main a:hover {
+        width: 41%;
     }
 }

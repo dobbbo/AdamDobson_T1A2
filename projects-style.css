@@ -152,10 +152,13 @@ main a {
     height: 15rem;
     margin: 1rem;
     padding: 0.75rem;
+    transition: all 0.2s ease-in-out;
 }
 
 main a:hover {
     border: 3px solid aqua;
+    width: 91vw;
+    height: 16rem;
 }
 
 main a:nth-child(1){
@@ -342,5 +345,9 @@ footer p {
 
     main a {
         width: 40%;
+    }
+    
+    main a:hover {
+        width: 41%;
     }
 }
